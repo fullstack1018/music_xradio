@@ -66,17 +66,17 @@
                     android:textSize="@dimen/text_size_body" />
             </LinearLayout>
 
-            <com.like.LikeButton
-                android:id="@+id/btn_favorite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                app:anim_scale_factor="2"
-                app:icon_size="@dimen/size_img_small"
-                app:like_drawable="@drawable/ic_heart_white_36dp"
-                app:liked="false"
-                app:unlike_drawable="@drawable/ic_heart_outline_white_36dp" />
+<!--            <com.like.LikeButton-->
+<!--                android:id="@+id/btn_favorite"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                app:anim_scale_factor="2"-->
+<!--                app:icon_size="@dimen/size_img_small"-->
+<!--                app:like_drawable="@drawable/ic_heart_white_36dp"-->
+<!--                app:liked="false"-->
+<!--                app:unlike_drawable="@drawable/ic_heart_outline_white_36dp" />-->
 
         </RelativeLayout>
 
@@ -350,23 +350,23 @@
                         android:src="@drawable/ic_play_arrow_white_36dp"
                         app:backgroundTint="@color/float_button_color" />
 
-                    <ImageView
-                        android:id="@+id/btn_next"
-                        android:layout_width="@dimen/size_img_medium"
-                        android:layout_height="@dimen/size_img_medium"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="@dimen/activity_horizontal_margin"
-                        android:layout_toEndOf="@+id/fb_play"
-                        android:src="@drawable/ic_skip_next_white_36dp" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btn_next"-->
+<!--                        android:layout_width="@dimen/size_img_medium"-->
+<!--                        android:layout_height="@dimen/size_img_medium"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginStart="@dimen/activity_horizontal_margin"-->
+<!--                        android:layout_toEndOf="@+id/fb_play"-->
+<!--                        android:src="@drawable/ic_skip_next_white_36dp" />-->
 
-                    <ImageView
-                        android:id="@+id/btn_prev"
-                        android:layout_width="@dimen/size_img_medium"
-                        android:layout_height="@dimen/size_img_medium"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-                        android:layout_toStartOf="@+id/fb_play"
-                        android:src="@drawable/ic_skip_previous_white_36dp" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/btn_prev"-->
+<!--                        android:layout_width="@dimen/size_img_medium"-->
+<!--                        android:layout_height="@dimen/size_img_medium"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+<!--                        android:layout_toStartOf="@+id/fb_play"-->
+<!--                        android:src="@drawable/ic_skip_previous_white_36dp" />-->
                 </RelativeLayout>
             </LinearLayout>
 

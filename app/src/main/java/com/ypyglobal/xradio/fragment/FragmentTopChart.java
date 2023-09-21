@@ -15,6 +15,8 @@
 
 package com.ypyglobal.xradio.fragment;
 
+import android.util.Log;
+
 import com.google.gson.reflect.TypeToken;
 import com.ypyglobal.xradio.adapter.RadioAdapter;
 import com.ypyglobal.xradio.dataMng.XRadioNetUtils;
@@ -39,6 +41,9 @@ public class FragmentTopChart extends XRadioListFragment<RadioModel> {
     @Override
     public YPYRecyclerViewAdapter<RadioModel> createAdapter(ArrayList<RadioModel> listObjects) {
         RadioAdapter mRadioAdapter = new RadioAdapter(mContext, listObjects, mUrlHost, mSizeH, mTypeUI);
+
+        Log.e("xxxxxxxx", String.valueOf(listObjects));
+
         mRadioAdapter.setListener(mObject -> mContext.startPlayingList(mObject, listObjects));
 //        mRadioAdapter.setOnRadioListener((model, isFavorite) -> mContext.updateFavorite(model, TYPE_TAB_FAVORITE, isFavorite));
         return mRadioAdapter;

@@ -14,41 +14,37 @@ public class ActivityAppBarMainBindingImpl extends ActivityAppBarMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.my_toolbar, 3);
-        sViewsWithIds.put(R.id.layout_total_drag_drop, 4);
-        sViewsWithIds.put(R.id.tab_layout, 5);
-        sViewsWithIds.put(R.id.view_pager, 6);
-        sViewsWithIds.put(R.id.container, 7);
-        sViewsWithIds.put(R.id.img_touch, 8);
-        sViewsWithIds.put(R.id.layout_ads, 9);
+        sViewsWithIds.put(R.id.my_toolbar, 2);
+        sViewsWithIds.put(R.id.layout_total_drag_drop, 3);
+        sViewsWithIds.put(R.id.tab_layout, 4);
+        sViewsWithIds.put(R.id.view_pager, 5);
+        sViewsWithIds.put(R.id.container, 6);
+        sViewsWithIds.put(R.id.img_touch, 7);
+        sViewsWithIds.put(R.id.layout_ads, 8);
     }
     // views
-    @NonNull
-    private final androidx.coordinatorlayout.widget.CoordinatorLayout mboundView2;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityAppBarMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private ActivityAppBarMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (com.google.android.material.appbar.AppBarLayout) bindings[1]
-            , (android.widget.FrameLayout) bindings[7]
-            , (android.widget.ImageView) bindings[8]
-            , (android.widget.RelativeLayout) bindings[9]
+            , (android.widget.FrameLayout) bindings[6]
+            , (android.widget.ImageView) bindings[7]
+            , (android.widget.RelativeLayout) bindings[8]
             , (android.widget.RelativeLayout) bindings[0]
-            , (bindings[4] != null) ? com.ypyglobal.xradio.databinding.ItemDragDropBinding.bind((android.view.View) bindings[4]) : null
-            , (bindings[3] != null) ? com.ypyglobal.xradio.databinding.ItemToolbarBinding.bind((android.view.View) bindings[3]) : null
-            , (com.google.android.material.tabs.TabLayout) bindings[5]
-            , (com.ypyglobal.xradio.ypylibs.view.YPYViewPager) bindings[6]
+            , (bindings[3] != null) ? com.ypyglobal.xradio.databinding.ItemDragDropBinding.bind((android.view.View) bindings[3]) : null
+            , (bindings[2] != null) ? com.ypyglobal.xradio.databinding.ItemToolbarBinding.bind((android.view.View) bindings[2]) : null
+            , (com.google.android.material.tabs.TabLayout) bindings[4]
+            , (com.ypyglobal.xradio.ypylibs.view.YPYViewPager) bindings[5]
             );
         this.appBar.setTag(null);
         this.layoutBg.setTag(null);
-        this.mboundView2 = (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[2];
-        this.mboundView2.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

@@ -66,16 +66,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </FrameLayout>
-            <include
-                android:id="@+id/layout_total_drag_drop"
-                layout="@layout/item_drag_drop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="bottom"
-                android:clipToPadding="true"
-                app:layout_behavior="@string/new_bottom_sheet_behavior" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <include
+            android:id="@+id/layout_total_drag_drop"
+            layout="@layout/item_drag_drop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:clipToPadding="true"
+            app:layout_behavior="@string/new_bottom_sheet_behavior" />
 
         <RelativeLayout
             android:id="@+id/layout_ads"

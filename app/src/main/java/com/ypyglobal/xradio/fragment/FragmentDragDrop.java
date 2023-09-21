@@ -28,8 +28,6 @@ import android.view.animation.Transformation;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.like.LikeButton;
-import com.like.OnLikeListener;
 import com.warkiz.widget.IndicatorSeekBar;
 import com.warkiz.widget.OnSeekChangeListener;
 import com.warkiz.widget.SeekParams;
@@ -101,19 +99,19 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
         updateVolume();
 
         updateInfo(true);
-        viewBinding.btnFavorite.setOnLikeListener(new OnLikeListener() {
-            @Override
-            public void liked(LikeButton likeButton) {
-                RadioModel model = YPYStreamManager.getInstance().getCurrentRadio();
-                mContext.updateFavorite(model, TYPE_TAB_FAVORITE, true);
-            }
-
-            @Override
-            public void unLiked(LikeButton likeButton) {
-                RadioModel model = YPYStreamManager.getInstance().getCurrentRadio();
-                mContext.updateFavorite(model, TYPE_TAB_FAVORITE, false);
-            }
-        });
+//        viewBinding.btnFavorite.setOnLikeListener(new OnLikeListener() {
+//            @Override
+//            public void liked(LikeButton likeButton) {
+//                RadioModel model = YPYStreamManager.getInstance().getCurrentRadio();
+//                mContext.updateFavorite(model, TYPE_TAB_FAVORITE, true);
+//            }
+//
+//            @Override
+//            public void unLiked(LikeButton likeButton) {
+//                RadioModel model = YPYStreamManager.getInstance().getCurrentRadio();
+//                mContext.updateFavorite(model, TYPE_TAB_FAVORITE, false);
+//            }
+//        });
 
         UIConfigModel model = mContext.mTotalMng.getUiConfigModel();
         mTypeUI = model != null ? model.getUiPlayer() : UI_PLAYER_NO_LAST_FM_SQUARE_DISK;
@@ -140,8 +138,8 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
     private void setUpClick() {
         viewBinding.btnClose.setOnClickListener(this);
         viewBinding.fbPlay.setOnClickListener(this);
-        viewBinding.btnNext.setOnClickListener(this);
-        viewBinding.btnPrev.setOnClickListener(this);
+//        viewBinding.btnNext.setOnClickListener(this);
+//        viewBinding.btnPrev.setOnClickListener(this);
 //        viewBinding.btnFacebook.setOnClickListener(this);
 //        viewBinding.btnInstagram.setOnClickListener(this);
 //        viewBinding.btnWebsite.setOnClickListener(this);
@@ -267,7 +265,7 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
 //
 //                        String urlInsta = mRadioModel.getUrlInstagram();
 //                        viewBinding.layoutInstagram.setVisibility(TextUtils.isEmpty(urlInsta) ? View.GONE : View.VISIBLE);
-                        viewBinding.btnFavorite.setLiked(mRadioModel.isFavorite());
+//                        viewBinding.btnFavorite.setLiked(mRadioModel.isFavorite());
                     }
                 }
 
@@ -348,20 +346,20 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
         if (id == R.id.btn_close) {
             mContext.collapseListenMusic();
         }
-        else if (id == R.id.btn_next) {
-            if (mContext.isAllCheckNetWorkOff && !ApplicationUtils.isOnline(mContext)) {
-                mContext.showToast(R.string.info_connect_to_play);
-                return;
-            }
-            mContext.startMusicService(ACTION_NEXT);
-        }
-        else if (id == R.id.btn_prev) {
-            if (mContext.isAllCheckNetWorkOff && !ApplicationUtils.isOnline(mContext)) {
-                mContext.showToast(R.string.info_connect_to_play);
-                return;
-            }
-            mContext.startMusicService(ACTION_PREVIOUS);
-        }
+//        else if (id == R.id.btn_next) {
+//            if (mContext.isAllCheckNetWorkOff && !ApplicationUtils.isOnline(mContext)) {
+//                mContext.showToast(R.string.info_connect_to_play);
+//                return;
+//            }
+//            mContext.startMusicService(ACTION_NEXT);
+//        }
+//        else if (id == R.id.btn_prev) {
+//            if (mContext.isAllCheckNetWorkOff && !ApplicationUtils.isOnline(mContext)) {
+//                mContext.showToast(R.string.info_connect_to_play);
+//                return;
+//            }
+//            mContext.startMusicService(ACTION_PREVIOUS);
+//        }
         else if (id == R.id.fb_play) {
             if (mContext.isAllCheckNetWorkOff && !ApplicationUtils.isOnline(mContext)) {
                 mContext.showToast(R.string.info_connect_to_play);
@@ -450,7 +448,7 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
                 if (mRadioModel != null) {
                     if (mRadioModel.getId() == trackId) {
                         mRadioModel.setFavorite(isFav);
-                        viewBinding.btnFavorite.setLiked(isFav);
+//                        viewBinding.btnFavorite.setLiked(isFav);
                     }
                 }
 
@@ -518,8 +516,8 @@ public class FragmentDragDrop extends YPYFragment<FragmentDragDropDetailBinding>
 
     private void onUpdateUIWhenSupportRTL() {
         try {
-            viewBinding.btnNext.setImageResource(R.drawable.ic_skip_previous_white_36dp);
-            viewBinding.btnPrev.setImageResource(R.drawable.ic_skip_next_white_36dp);
+//            viewBinding.btnNext.setImageResource(R.drawable.ic_skip_previous_white_36dp);
+//            viewBinding.btnPrev.setImageResource(R.drawable.ic_skip_next_white_36dp);
             viewBinding.seekBar1.setScaleX(-1f);
             viewBinding.imgVolumeMax.setScaleX(-1f);
             viewBinding.imgVolumeOff.setScaleX(-1f);

@@ -13,7 +13,6 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.like.LikeButton;
 import com.wang.avi.AVLoadingIndicatorView;
 import com.warkiz.widget.IndicatorSeekBar;
 import com.ypyglobal.xradio.R;
@@ -24,15 +23,6 @@ import java.lang.Object;
 public abstract class FragmentDragDropDetailBinding extends ViewDataBinding {
   @NonNull
   public final ImageView btnClose;
-
-  @NonNull
-  public final LikeButton btnFavorite;
-
-  @NonNull
-  public final ImageView btnNext;
-
-  @NonNull
-  public final ImageView btnPrev;
 
   @NonNull
   public final EqualizerView equalizer;
@@ -104,20 +94,17 @@ public abstract class FragmentDragDropDetailBinding extends ViewDataBinding {
   public final TextView tvTitleDragDrop;
 
   protected FragmentDragDropDetailBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, ImageView btnClose, LikeButton btnFavorite, ImageView btnNext,
-      ImageView btnPrev, EqualizerView equalizer, FloatingActionButton fbPlay,
-      ImageView imgBgDragDrop, ImageView imgOverlay, ImageView imgPlaySong, ImageView imgVolumeMax,
-      ImageView imgVolumeOff, LinearLayout layoutAction, RelativeLayout layoutActionBarPlayer,
-      LinearLayout layoutContent, RelativeLayout layoutControl, RelativeLayout layoutDragDropBg,
-      RelativeLayout layoutImg, LinearLayout layoutInfoPlay, RelativeLayout layoutVolume,
+      int _localFieldCount, ImageView btnClose, EqualizerView equalizer,
+      FloatingActionButton fbPlay, ImageView imgBgDragDrop, ImageView imgOverlay,
+      ImageView imgPlaySong, ImageView imgVolumeMax, ImageView imgVolumeOff,
+      LinearLayout layoutAction, RelativeLayout layoutActionBarPlayer, LinearLayout layoutContent,
+      RelativeLayout layoutControl, RelativeLayout layoutDragDropBg, RelativeLayout layoutImg,
+      LinearLayout layoutInfoPlay, RelativeLayout layoutVolume,
       AVLoadingIndicatorView playProgressBar1, IndicatorSeekBar seekBar1, TextView tvBitrate,
       TextView tvDragSinger, TextView tvDragSong, TextView tvPercent, TextView tvSleepTimer,
       TextView tvTitleDragDrop) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnClose = btnClose;
-    this.btnFavorite = btnFavorite;
-    this.btnNext = btnNext;
-    this.btnPrev = btnPrev;
     this.equalizer = equalizer;
     this.fbPlay = fbPlay;
     this.imgBgDragDrop = imgBgDragDrop;

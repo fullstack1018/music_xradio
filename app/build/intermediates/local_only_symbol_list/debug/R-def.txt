@@ -159,11 +159,9 @@ id action_website
 id app_bar
 id btn_allow
 id btn_close
-id btn_favorite
 id btn_favourite
 id btn_next
 id btn_play
-id btn_prev
 id btn_small_next
 id btn_small_play
 id btn_small_prev

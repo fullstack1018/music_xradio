@@ -75,6 +75,7 @@ public class RadioAdapter extends YPYRecyclerViewAdapter<RadioModel> {
     public void onBindNormalViewHolder(RecyclerView.ViewHolder holder, int position) {
         RadioHolder mHolder = (RadioHolder) holder;
         final RadioModel radioModel = mListObjects.get(position);
+
         mHolder.mTvName.setText(radioModel.getName());
 
         String tag=radioModel.getTags();

@@ -3422,11 +3422,9 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_allow
 id btn_close
-id btn_favorite
 id btn_favourite
 id btn_next
 id btn_play
-id btn_prev
 id btn_small_next
 id btn_small_play
 id btn_small_prev

@@ -113,10 +113,9 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
         mFragmentDragDrop = (FragmentDragDrop) getSupportFragmentManager().findFragmentById(R.id.fragment_drag_drop);
         findViewById(R.id.img_touch).setOnTouchListener((v, event) -> true);
 
-        viewBinding.layoutTotalDragDrop.btnSmallNext.setOnClickListener(this);
-        viewBinding.layoutTotalDragDrop.btnSmallPrev.setOnClickListener(this);
-        viewBinding.layoutTotalDragDrop.btnSmallPlay.setOnClickListener(this);
-
+//        viewBinding.layoutTotalDragDrop.btnSmallNext.setOnClickListener(this);
+//        viewBinding.layoutTotalDragDrop.btnSmallPrev.setOnClickListener(this);
+//        viewBinding.layoutTotalDragDrop.btnSmallPlay.setOnClickListener(this);
 
         setUpTab();
         showAppRate();
@@ -151,7 +150,7 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
     }
 
     private void setUpBottomPlayer() {
-        setUpDragDropLayout();
+//        setUpDragDropLayout();
         boolean isHaving = isHavingListStream();
         showLayoutListenMusic(isHaving);
         if (isHaving) {
@@ -233,15 +232,15 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
     }
 
     private void showLayoutListenMusic(boolean b) {
-        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED && !b) {
-            return;
-        }
-        viewBinding.layoutTotalDragDrop.getRoot().setVisibility(b ? View.VISIBLE : View.GONE);
-        viewBinding.viewPager.setPadding(0, 0, 0, b ? mStartHeight : 0);
-        viewBinding.container.setPadding(0, 0, 0, b ? mStartHeight : 0);
-        if (!b) {
-            mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        }
+//        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED && !b) {
+//            return;
+//        }
+//        viewBinding.layoutTotalDragDrop.getRoot().setVisibility(b ? View.VISIBLE : View.GONE);
+//        viewBinding.viewPager.setPadding(0, 0, 0, b ? mStartHeight : 0);
+//        viewBinding.container.setPadding(0, 0, 0, b ? mStartHeight : 0);
+//        if (!b) {
+//            mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+//        }
     }
 
     private void expandLayoutListenMusic() {
@@ -257,16 +256,17 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
     }
 
     public boolean collapseListenMusic() {
-        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
-            mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-            enableDragForBottomSheet(ALLOW_DRAG_DROP_WHEN_EXPAND);
-            return true;
-        }
+        viewBinding.layoutTotalDragDrop.getRoot().setVisibility(View.GONE);
+//        if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+//            mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+//            enableDragForBottomSheet(ALLOW_DRAG_DROP_WHEN_EXPAND);
+//            return true;
+//        }
         return false;
     }
 
     public void enableDragForBottomSheet(boolean b) {
-        mBottomSheetBehavior.setAllowUserDragging(b);
+//        mBottomSheetBehavior.setAllowUserDragging(b);
     }
 
 
@@ -581,21 +581,21 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
-            if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+//            if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                 if (mFragmentDragDrop != null) {
                     mFragmentDragDrop.increaseVolume();
                 }
                 return true;
-            }
+//            }
 
         }
         else if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
-            if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+//            if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                 if (mFragmentDragDrop != null) {
                     mFragmentDragDrop.downVolume();
                 }
                 return true;
-            }
+//            }
         }
         else if (keyCode == KeyEvent.KEYCODE_MEDIA_NEXT) {
             if (ApplicationUtils.isOnline(this) && isHavingListStream()) {
@@ -770,7 +770,6 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
             if (mListPlaying == null || !mTotalMng.isListEqual(mListPlaying, listRadioModels)) {
                 ArrayList<RadioModel> mListDatas = (ArrayList<RadioModel>) listRadioModels.clone();
                 YPYStreamManager.getInstance().setListModels(mListDatas);
-
             }
             startPlayRadio(model);
         }
@@ -783,13 +782,20 @@ public class XMultiRadioMainActivity extends XRadioFragmentActivity<ActivityAppB
             if (b) {
                 startMusicService(ACTION_PLAY);
             }
+            viewBinding.layoutTotalDragDrop.getRoot().setVisibility(View.VISIBLE);
+            viewBinding.viewPager.setPadding(0, 0, 0, 100);
+            viewBinding.container.setPadding(0, 0, 0, 100);
+            showAppBar(false);
+            showHeaderMusicPlayer(true);
+            if (mFragmentDragDrop != null) {
+                mFragmentDragDrop.updateVolume();
+            }
         }
         catch (Exception e) {
             e.printStackTrace();
             viewBinding.layoutTotalDragDrop.btnSmallPlay.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             startMusicService(ACTION_STOP);
         }
-
     }
 
     private void updateInfoOfPlayingTrack(boolean isNeedUpdateSocial) {
