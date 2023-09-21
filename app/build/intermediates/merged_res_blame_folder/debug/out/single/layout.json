@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/activity_app_bar_main.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/activity_app_bar_main.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_footer.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_footer.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_grid_theme.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_grid_theme.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/dialog_sleep_time.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/dialog_sleep_time.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_progress_bar.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_progress_bar.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_list_theme.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_list_theme.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_multi_notification_music.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_multi_notification_music.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/fragment_recyclerview.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/fragment_recyclerview.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_toolbar.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_toolbar.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_grid_radio.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_grid_radio.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/dialog_term_of_condition.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/dialog_term_of_condition.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_grid_genre.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_grid_genre.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_list_theme.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_list_theme.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_grid_genre.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_grid_genre.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/fragment_drag_drop_detail.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/fragment_drag_drop_detail.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_drag_drop.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_drag_drop.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/activity_show_url.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/activity_show_url.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_list_radio.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_list_radio.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_list_genre.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_list_genre.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_card_list_genre.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_card_list_genre.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/activity_grant_permission.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/activity_grant_permission.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/activity_splash.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_list_radio.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_list_radio.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/activity_single_radio.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/activity_single_radio.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_grid_radio.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_grid_radio.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_single_radio_detail.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_single_radio_detail.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_single_notification_music.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_single_notification_music.xml"
+    },
+    {
+        "merged": "com.ypyglobal.xradio.app-mergeDebugResources-56:/layout/item_flat_grid_theme.xml",
+        "source": "com.ypyglobal.xradio.app-main-59:/layout/item_flat_grid_theme.xml"
+    }
+]

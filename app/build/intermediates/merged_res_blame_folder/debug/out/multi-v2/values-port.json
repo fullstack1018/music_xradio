@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ypyglobal.xradio.app-mergeDebugResources-55:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Star1227\\.gradle\\caches\\transforms-3\\9008132759a4d925e1cb1e1a76131876\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
