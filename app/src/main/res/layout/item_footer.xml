@@ -28,7 +28,7 @@
         android:paddingEnd="@dimen/activity_horizontal_margin"
         android:paddingBottom="@dimen/dialog_margin">
 
-        <com.ypyglobal.xradio.ypylibs.view.CircularProgressBar
+        <com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.view.CircularProgressBar
             android:id="@+id/progressBar_loading_more"
             android:layout_width="@dimen/height_process_bar"
             android:layout_height="@dimen/height_process_bar"

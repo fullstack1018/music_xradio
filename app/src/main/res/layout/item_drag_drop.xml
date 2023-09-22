@@ -81,7 +81,7 @@
             android:src="@drawable/ic_play_arrow_white_36dp"
         />
 
-        <com.ypyglobal.xradio.ypylibs.view.CircularProgressBar
+        <com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.view.CircularProgressBar
             android:id="@+id/status_progressBar"
             android:layout_width="@dimen/size_img_small"
             android:layout_height="@dimen/size_img_small"
@@ -106,7 +106,7 @@
             android:layout_height="match_parent"/>
         <fragment
             android:id="@+id/fragment_drag_drop"
-            android:name="com.ypyglobal.xradio.fragment.FragmentDragDrop"
+            android:name="com.bajarmusica.descargarmusicarapidoalcelularguide.fragment.FragmentDragDrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </fragment>

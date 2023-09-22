@@ -30,7 +30,7 @@ import androidx.core.view.ViewCompat;
  * @author:YPY Global
 
  * @Email: bl911vn@gmail.com
- * @Website: http://ypyglobal.com
+ * @Website: http://bajarmusica.com
  * Created by YPY Global on 10/19/17.
  */
 public class FixAppBarLayoutBehavior extends AppBarLayout.Behavior {

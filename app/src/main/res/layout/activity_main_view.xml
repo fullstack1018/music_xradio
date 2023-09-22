@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainView"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/white"
+            android:background="#222222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout1"
+            android:background="#222222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabTextColor="#959393"
+            app:tabSelectedTextColor="@color/white"
+            app:tabGravity="fill">
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/descargea"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="170dp"
+        android:textAllCaps="false"
+        android:text="Descarge con"/>
+    <Button
+        android:id="@+id/tutorial"
+        android:layout_below="@+id/descargea"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Tutorial"/>
+    <Button
+        android:id="@+id/music"
+        android:layout_below="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Musica"/>
+<!--    <Button-->
+<!--        android:id="@+id/generos"-->
+<!--        android:layout_below="@+id/music"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="#4e2755"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="Generos"/>-->
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+</RelativeLayout>

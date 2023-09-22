@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="E:\work\music app\music\app\src\main\ic_launcher-playstore.png" />
-                                                <entry key="scalingPercent" value="60" />
+                                                <entry key="imagePath" value="E:\work\music app\SourceCode\android_code\xRadio\app\src\main\res\drawable\icon.png" />
+                                                <entry key="scalingPercent" value="48" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -282,6 +282,43 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                      </PersistentState>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState>
+              <option name="children">
+                <map>
+                  <entry key="vectorAssetStep">
+                    <value>
+                      <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/arrow_back/baseline_arrow_back_24.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputName" value="back" />
+                            <entry key="sourceFile" value="E:\work\music app\SourceCode\android_code\xRadio" />
                           </map>
                         </option>
                       </PersistentState>

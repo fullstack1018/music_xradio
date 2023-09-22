@@ -12,7 +12,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/footer_view">
 
-            <com.ypyglobal.xradio.ypylibs.view.YPYRecyclerView
+            <com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.view.YPYRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -35,7 +35,7 @@
             android:textSize="@dimen/text_size_body"
             android:visibility="gone" />
 
-        <com.ypyglobal.xradio.ypylibs.view.CircularProgressBar
+        <com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.view.CircularProgressBar
             android:id="@+id/progress_bar"
             android:layout_width="@dimen/height_process_bar"
             android:layout_height="@dimen/height_process_bar"

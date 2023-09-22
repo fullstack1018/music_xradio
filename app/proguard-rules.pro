@@ -229,9 +229,9 @@
 -keep class com.google.gson.stream.** { *; }
 
 # Application classes that will be serialized/deserialized over Gson
--keep class com.ypyglobal.xradio.model.** { <fields>; }
--keep class com.ypyglobal.xradio.ypylibs.model.** { <fields>; }
--keep class com.ypyglobal.xradio.ypylibs.imageloader.* { *; }
+-keep class com.bajarmusica.descargarmusicarapidoalcelularguide.model.** { <fields>; }
+-keep class com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.model.** { <fields>; }
+-keep class com.bajarmusica.descargarmusicarapidoalcelularguide.ypylibs.imageloader.* { *; }
 
 # Prevent proguard from stripping interface information from TypeAdapter, TypeAdapterFactory,
 # JsonSerializer, JsonDeserializer instances (so they can be used in @JsonAdapter)

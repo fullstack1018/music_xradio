@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubMainView1"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        app:title="Tutorial"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white"
+        android:background="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="170dp"
+        android:textAllCaps="false"
+        android:text="Tutorial"/>
+
+    <Button
+        android:id="@+id/guide1"
+        android:layout_below="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Guide1"/>
+    <Button
+        android:id="@+id/guide2"
+        android:layout_below="@+id/guide1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="18dp"
+        android:background="#4e2755"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Guide2"/>
+    <Button
+        android:id="@+id/final_guide"
+        android:layout_below="@+id/guide2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4e2755"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Final"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+</RelativeLayout>

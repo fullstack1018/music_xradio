@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">STREAM MUSIC</string>
+    <string name="app_name">Bajar Musica Guia</string>
     <string name="info_copyright">©2020 YPY Global</string>
-    <string name="title_home_screen">STREAM MUSIC</string>
+    <string name="title_home_screen">Bajar Musica Guia</string>
 
     <string name="title_settings">Settings</string>
     <string name="info_loading">Please wait…</string>
@@ -91,7 +91,7 @@
     <string name="format_request_permission"><![CDATA[Thank for choosing <b>%1$s</b>. Please give us the below permission:<br><br><b>SDCARD PERMISSION:</b> It will help us to save your favorite radio list.]]></string>
     <string name="title_give_it">Give It Now</string>
 
-    <string name="title_setting_ads" >Setting Advertisement</string>
+    <string name="title_setting_ads">Setting Advertisement</string>
     <string name="format_request_permission_13"><![CDATA[Thank you for choosing <b>%1$s</b>. Please allow the following permissions:<br><br><b>NOTIFICATION PERMISSION:</b> It will allow app to show the control notification when listening live radio.]]></string>
 
 
